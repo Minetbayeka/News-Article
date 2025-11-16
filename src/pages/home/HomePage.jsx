@@ -1,6 +1,7 @@
 import React from "react";
 import { events } from "../../data";
 import image from "../../../public/images/kribi.jpg";
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   return (
@@ -13,11 +14,14 @@ const HomePage = () => {
           alt="Hero" 
           className="w-full h-96 object-cover" 
         />
+       
+      
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h2 className="text-3xl font-bold text-white drop-shadow">
             NEWS & EVENTS
           </h2>
         </div>
+       
       </div>
 
       {/* Filters */}
@@ -30,9 +34,11 @@ const HomePage = () => {
       </div>
 
       {/* Events Grid */}
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 py-10 ">
         {events.map((event, index) => (
-          <div key={index} className="bg-white shadow rounded overflow-hidden transition duration-300 delay-150 hover:delay-300 ">
+          <div key={index} className="bg-white  rounded overflow-hidden 
+          shadow-md transform transition duration-200 hover:scale-105
+      hover:-translate-y-2 hover:shadow-2xl hover:z-50">
             <img 
               src={event.img} 
               alt="Event" 

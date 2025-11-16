@@ -70,10 +70,10 @@ const Header = () => {
               <Link to="/AboutUs" onClick={closeMenu}>About</Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/Services" onClick={closeMenu}>Services</Link>
+              <Link to="/Services" onClick={closeMenu}>Need our help</Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/Gallery" onClick={closeMenu}>Gallery</Link>
+              <Link to="/Gallery" onClick={closeMenu}>Get Involved</Link>
             </li>
             <li className="hover:text-orange-400">
               <Link to="/Contact" onClick={closeMenu}>Contact</Link>
