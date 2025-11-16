@@ -12,7 +12,7 @@ It allows users to browse, filter, and explore news articles with an intuitive a
 - Lazy loading and optional virtualization for large datasets  
 
 ---
-
+ 
 ## 🛠️ Installation & Setup
 -Install dependencies
 npm install

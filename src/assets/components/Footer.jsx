@@ -17,7 +17,7 @@ Whether it’s raising funds from a cake bake or being sponsored for a marathon,
 <div className="bg-white text-gray-900 p-6 rounded shadow">
 <h4 className="font-bold mb-3">HOW TO DONATE</h4>
 <p className="text-sm mb-4">Donating helps us make a difference. Minimum admin fees ensure donations reach veterans who need it most.</p>
-<button className="bg-blue-300 text-white px-4 py-2 rounded  text-black">Donate</button>
+<button className="bg-blue-300  px-4 py-2 rounded  text-black">Donate</button>
 </div>
 </div>
 </div>

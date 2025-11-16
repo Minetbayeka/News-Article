@@ -2,6 +2,7 @@ import React from "react";
 import { events } from "../../data";
 import image from "../../../public/images/kribi.jpg";
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -47,9 +48,11 @@ const HomePage = () => {
             <div className="p-4">
               <h3 className="text-lg font-semibold mb-2">{event.title}</h3>
               <p className="text-sm text-gray-600 mb-3">{event.text}</p>
+              <Link to="/articleDetail">
               <button className="text-blue-600 text-sm font-semibold">
                 Read More
               </button>
+              </Link>
             </div>
           </div>
         ))}
