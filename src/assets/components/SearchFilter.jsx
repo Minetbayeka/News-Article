@@ -1,10 +1,9 @@
-
-import { Mic, SearchIcon } from 'lucide-react';
-import React from 'react';
+import { Mic, SearchIcon } from "lucide-react";
+import React from "react";
 
 const SearchFilter = ({ onSearch }) => {
   return (
-    <div className='mt-10'>
+    <div className="mt-10">
       <div className="flex items-center bg-white dark:bg-gray-800 rounded-full px-3 sm:px-4 py-2 max-w-full sm:max-w-lg shadow-sm mb-6">
         <SearchIcon className="h-5 w-5 text-gray-400 dark:text-gray-300" />
 
@@ -22,4 +21,3 @@ const SearchFilter = ({ onSearch }) => {
 };
 
 export default SearchFilter;
-
