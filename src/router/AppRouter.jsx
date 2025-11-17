@@ -3,7 +3,7 @@ import {createBrowserRouter} from "react-router-dom"
 import Layout from "../assets/components/Layout";
 import HomePage from "../pages/home/HomePage";
 import ArticleDetail from "../assets/components/ArticleDetail";
-// import ArticleDetail from "../assets/components/ArticleDetail";
+
 
 
 
@@ -15,9 +15,8 @@ import ArticleDetail from "../assets/components/ArticleDetail";
 
 const children = [
 
-    //   { element: <HomePage />, path: "/home" },
+    
         { element: <HomePage />, path: "/" },
-        //  { element: <ArticleDetail />, path: "/articleDetail/:id" },
         { element: <ArticleDetail />, path: "/articleDetail/:id" },
      
      

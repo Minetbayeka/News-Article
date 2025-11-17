@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Button } from "./Button";
-import { AirVent, BookOpen, FileAxis3D, X } from "lucide-react";
+import {
+  AirVent,
+  BookOpen,
+  FileAxis3D,
+  Hamburger,
+  Menu,
+  X,
+} from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +19,6 @@ const Header = () => {
   return (
     <header className="relative mx-auto max-w-7xl px-4">
       <div className="flex items-center justify-between mt-8">
-
         {/* Logo */}
         <div className="text-2xl font-bold tracking-wide cursor-pointer">
           NEWS-<span className="text-[#cc3333]">ARTICLES</span>
@@ -47,14 +53,11 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden p-2 text-black"
-        >
+        <button onClick={toggleMenu} className="lg:hidden p-2 text-black">
           {isMenuOpen ? (
-            <BookOpen   className="w-6 h-6" />
+            <X className="w-6 h-6" />
           ) : (
-            <X  className="w-6 h-6" />
+            <Menu className="w-6 h-6" />
           )}
         </button>
       </div>
@@ -64,19 +67,29 @@ const Header = () => {
         <div className="lg:hidden mt-4 bg-white p-6 rounded-lg shadow-md">
           <ul className="flex flex-col gap-4 text-base">
             <li className="hover:text-orange-400">
-              <Link to="/" onClick={closeMenu}>Home</Link>
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/AboutUs" onClick={closeMenu}>About</Link>
+              <Link to="/AboutUs" onClick={closeMenu}>
+                About
+              </Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/Services" onClick={closeMenu}>Need our help</Link>
+              <Link to="/Services" onClick={closeMenu}>
+                Need our help
+              </Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/Gallery" onClick={closeMenu}>Get Involved</Link>
+              <Link to="/Gallery" onClick={closeMenu}>
+                Get Involved
+              </Link>
             </li>
             <li className="hover:text-orange-400">
-              <Link to="/Contact" onClick={closeMenu}>Contact</Link>
+              <Link to="/Contact" onClick={closeMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
 
@@ -92,5 +105,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
